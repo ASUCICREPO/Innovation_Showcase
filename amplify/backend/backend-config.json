@@ -1,0 +1,84 @@
+{
+  "api": {
+    "highlightedprojects": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "highlightedProjectsLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "showcaseAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "showcaseInnovationLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "highlightedProjectsLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "showcaseInnovationLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_highlightedProjectsLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "highlightedProjectsLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_highlightedProjectsLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "highlightedProjectsLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_showcaseInnovationLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "showcaseInnovationLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_showcaseInnovationLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "showcaseInnovationLambda"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "amplifyDemo": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

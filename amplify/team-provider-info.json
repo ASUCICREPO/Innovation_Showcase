@@ -1,0 +1,30 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-innovationplatform-staging-215522-authRole",
+      "UnauthRoleArn": "arn:aws:iam::214913816271:role/amplify-innovationplatform-staging-215522-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::214913816271:role/amplify-innovationplatform-staging-215522-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-innovationplatform-staging-215522-deployment",
+      "UnauthRoleName": "amplify-innovationplatform-staging-215522-unauthRole",
+      "StackName": "amplify-innovationplatform-staging-215522",
+      "StackId": "arn:aws:cloudformation:us-west-2:214913816271:stack/amplify-innovationplatform-staging-215522/ed307410-bdfb-11ed-9a3d-0264e65f78b1",
+      "AmplifyAppId": "d25mxcpgog9rfd"
+    },
+    "categories": {
+      "function": {
+        "highlightedProjectsLambda": {
+          "deploymentBucketName": "amplify-innovationplatform-staging-215522-deployment",
+          "s3Key": "amplify-builds/highlightedProjectsLambda-58303778576948413863-build.zip"
+        },
+        "showcaseInnovationLambda": {
+          "deploymentBucketName": "amplify-innovationplatform-staging-215522-deployment",
+          "s3Key": "amplify-builds/showcaseInnovationLambda-6c366c584a2b7a455341-build.zip"
+        }
+      },
+      "storage": {
+        "amplifyDemo": {}
+      }
+    }
+  }
+}

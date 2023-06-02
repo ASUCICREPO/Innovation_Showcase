@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/highlightedprojects": {
+      "name": "/highlightedprojects",
+      "lambdaFunction": "highlightedProjectsLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

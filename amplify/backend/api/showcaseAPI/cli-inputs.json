@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/showcase": {
+      "name": "/showcase",
+      "lambdaFunction": "showcaseInnovationLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
